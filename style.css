@@ -10,10 +10,7 @@ body {
     height: 67px;
     background-color: springgreen;
 }
-.board{
-    height: calc( 100vh - 67px);
-    width: 100vw;
-}
+
 .tools{
     display: flex;
     justify-content: center;

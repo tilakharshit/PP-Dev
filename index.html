@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                 <div class="tool-options"></div>
             </div>
             <div class="tool">
-                <img src="./NewIcons/Eraser.svg" alt="" id="eraser" class="tool-img ">
+                <img src="./NewIcons/Eraser.svg" alt="" id="eraser" class="tool-img">
                 <div class="tool-options"></div>
             </div>
 
@@ -26,15 +26,17 @@
     <canvas class="board"></canvas>
     <script>
         let board = document.querySelector(".board");
-        
+        board.height = window.innerHeight;
+        board.width = window.innerWidth;
         // draw tool
         const ctx = board.getContext("2d");
         // console.log(tool);
         ctx.lineWidth = 10;
         // rendering
         //    ctx.strokeRect(75, 140, 150, 110);
-        // ctx.fillStyle = "red";
-        // ctx.fillRect(75, 140, 150, 110);
+        ctx.fillStyle = "brown";
+
+        ctx.fillRect(0, 0, board.width, board.height);
         // ctx.beginPath();
         // ctx.moveTo(30, 30);
         // ctx.lineTo(150, 150);
@@ -44,7 +46,7 @@
         // // to render on ui => stroke
         // ctx.stroke();
     </script>
-
+    <script src="tool.js"></script>
     <script src="draw.js"></script>
 </body>
 
