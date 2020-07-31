@@ -1,0 +1,31 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+.tool-bar{
+    height: 67px;
+    background-color: springgreen;
+}
+.board{
+    height: calc( 100vh - 67px);
+    width: 100vw;
+}
+.tools{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.tool{
+    height: 80%;
+    /* aspect ratio  */
+}
+.tool-options{
+}
+.tool-img{
+    height: 100%;
+    width: 45px;
+}
